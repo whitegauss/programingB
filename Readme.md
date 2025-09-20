@@ -3,6 +3,8 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <fstream>
+
 using namespace std;
 
 int main(){
@@ -12,7 +14,7 @@ int main(){
 
 ## コンパイル
 ```bash
-g++ <ファイル名>.cpp
+g++ <ファイル名>.cc
 ```
 ## 実行
 ```bash
