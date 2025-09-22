@@ -1,6 +1,6 @@
 set size ratio 1.0
 set key left
-set title "3D graph of z = exp(x^2+y^2)"
+set title "3D graph of z = exp(-(x^2+y^2))"
 set xlabel "x"
 set xrange [ -2.0 : 2.0 ]
 set xtics -2.0,0.5

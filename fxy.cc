@@ -15,7 +15,7 @@ for (int j=0 ; j<=40; j++){
     y=-2.0+0.1*j;
     for (int i=0 ; i<=40; i++){
         x=-2.0+0.1*i;
-        z=exp(x*x+y*y);
+        z=exp(-(x*x+y*y));
         fout<<setprecision(16)<<x<<" "<<y<<" "<<z<<endl;
     }
     fout<<endl;
