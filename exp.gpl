@@ -1,0 +1,22 @@
+set size ratio 1.0
+set key left
+set title "3D graph of z = exp(x^2+y^2)"
+set xlabel "x"
+set xrange [ -2.0 : 2.0 ]
+set xtics -2.0,0.5
+set ylabel "y"
+set yrange [ -2.0 : 2.0 ]
+set ytics -2.0,0.5
+set zeroaxis
+set hidden3d
+set contour
+set cntrparam linear
+set cntrparam levels auto 5
+# set parametric  <- この行を削除またはコメントアウト
+splot "fxy.data" with lines lw 2
+###
+set terminal postscript eps color \
+defaultplex "Helvetica" 16
+set output 'fxy.eps'
+replot # splotを再実行する代わりにreplotを使うと効率的
+set terminal x11
