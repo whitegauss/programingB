@@ -5,7 +5,8 @@
 - [gnuplot](../exp.gpl)
 
 グラフ
-<img width="720" height="504" alt="image" src="https://github.com/user-attachments/assets/2ae298ea-ce68-4f11-acc2-300da2c42f2c" />
+<img width="720" height="504" alt="image" src="https://github.com/user-attachments/assets/f18e20b4-e7ac-4cdd-bfad-1ec551743aa0" />
+
 ## dataファイル
 
 コンピュータ科学においてデータの扱いは用途に合わせて多様な進化を遂げてきた。
