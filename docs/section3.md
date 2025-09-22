@@ -5,7 +5,7 @@
 - [gnuplot](../exp.gpl)
 
 グラフ
-../public/fxy.png
+<img width="720" height="504" alt="image" src="https://github.com/user-attachments/assets/2ae298ea-ce68-4f11-acc2-300da2c42f2c" />
 ## dataファイル
 
 コンピュータ科学においてデータの扱いは用途に合わせて多様な進化を遂げてきた。
