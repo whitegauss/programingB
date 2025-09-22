@@ -20,3 +20,5 @@ g++ <ファイル名>.cc
 ```bash
 ./a.out
 ```
+
+[docs](/docs/Content.md)
