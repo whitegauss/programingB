@@ -12,6 +12,16 @@ int main(){
     cout << "c="    << c << endl;
     cout << "&c[0]=" << &c[0] << endl;
     cout << "c[0]=" << c[0] << endl;
-    
+
+    int *q;
+    q  = c;
+
+    cout << "c[0]+c[3]=" << *q + *(q+3) << endl;
+
+
+
+    int *p;
+    p  = &c[0];
+    cout << "p+1=" << p+1 << endl;
 
 }
