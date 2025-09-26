@@ -1,4 +1,4 @@
-# メインの使用法
+# モジュールのインプットなど
 ```cpp
 #include <iostream>
 #include <iomanip>
