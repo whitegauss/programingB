@@ -19,3 +19,4 @@ defaultplex "Helvetica" 16
 set output 'fxy.eps'
 replot 
 set terminal x11
+pause -1 

@@ -18,7 +18,7 @@ int main(){
 g++ <ファイル名>.cc
 ```
 ## 実行
-```bash
+```bash,cmd,powershell
 ./a.out
 ```
 

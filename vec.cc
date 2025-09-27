@@ -17,8 +17,8 @@ int main() {
     calculate_products(a, b, &c, d);
     cout << "v1= (" << a[0] << ", " << a[1] << ", " << a[2] << ")" << endl;
     cout << "v2= (" << b[0] << ", " << b[1] << ", " << b[2] << ")" << endl;
-    cout << "inner product= " << c << std::endl;
-    cout << "cross product= (" << d[0] << ", " << d[1] << ", "  << d[2] << ")" << std::endl;
+    cout << "inner product= " << c << endl;
+    cout << "cross product= (" << d[0] << ", " << d[1] << ", "  << d[2] << ")" << endl;
     return 0;
 }
 
