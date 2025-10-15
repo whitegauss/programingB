@@ -1,0 +1,19 @@
+# --- グラフの基本設定 ---
+reset
+set terminal pngcairo enhanced font "Arial,12" size 800,600
+set output "msd_from_file.png"
+
+# --- グラフの装飾 ---
+set title "MSD from msd.txt"
+set xlabel "Time"
+set ylabel "MSD"
+set grid
+
+# 凡例（データ系列の名前）を設定
+set key top left
+
+# --- プロット実行 ---
+# msd.txt の1列目をx軸、2列目をy軸としてプロット
+plot "msd.txt" using 1:2 with linespoints title "シミュレーションデータ"
+
+print "Plot saved to msd_from_file.png"
