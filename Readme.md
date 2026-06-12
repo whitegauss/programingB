@@ -24,5 +24,3 @@ g++ <ファイル名>.cc
 ```bash,cmd,powershell
 ./a.out
 ```
-
-[docs](/docs/Content.md)
