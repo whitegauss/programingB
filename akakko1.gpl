@@ -1,0 +1,36 @@
+# --- グラフの基本設定 ---
+reset
+set terminal pngcairo enhanced font "DejaVu Sans,14" size 1200,800 background "white"
+set output "torasu.png"
+
+# グリッド・見た目
+set grid lc rgb "#e6e6e6" lw 1
+set style line 1 lc rgb "#1f77b4" lw 2 pt 7 ps 1.2    # 主系列
+set style line 2 lc rgb "#ff7f0e" lw 1 pt 5 ps 1.0    # 補助系列
+set style fill solid 0.15 border -1
+
+# 凡例（箱を付けて見やすく）
+# 3次元の場合はグラフと被りやすいため、右上に配置します
+set key top right box linestyle 1 font ",12"
+
+# 軸書式（必要に応じて調整）
+set format x "%g"
+set format y "%g"
+set format z "%g"  # 3次元用にz軸の書式を追加
+
+# 3次元用の視点設定（縦回転角度、横回転角度、全体の拡大率、z軸の拡大率）
+set view 60, 30, 1, 1
+
+# z軸の底をxy平面に合わせる（浮かせたい場合はデフォルトのままか、正の値を設定）
+set ticslevel 0 
+
+# 出力（ファイル保存）
+# データファイル kakko3.data の 1列目をx、2列目をy、3列目をz としてプロット（splotを使用）
+splot "kakko3.data" using 1:2:3 with dots title "シミュレーションデータ"
+
+# ログプロットにしたい場合（コメントを外す）
+# set logscale xyz
+# splot "kakko3.data" using 1:2:3 with linespoints linestyle 1 title "log-log MSD"
+
+print "Plot saved to torasu.png"
+set output

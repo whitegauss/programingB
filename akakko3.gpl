@@ -1,7 +1,7 @@
 # --- グラフの基本設定 ---
 reset
 set terminal pngcairo enhanced font "DejaVu Sans,14" size 1200,800 background "white"
-set output "torasu.png"
+set output "kakko1.png"
 
 
 # グリッド・見た目
@@ -18,14 +18,14 @@ set format x "%g"
 set format y "%g"
 
 # 出力（ファイル保存）
-# データファイル kakko2.data の 1列目を x、2列目を y としてプロット
-plot "kakko2.data" using 1:2 with dots title "シミュレーションデータ"
+# データファイル kakko1.data の 1列目を x、2列目を y としてプロット
+plot "kakko1.data" using 1:2 with dots title "シミュレーションデータ"
 # ログプロットにしたい場合（コメントを外す）
 # set logscale xy
-# plot "kakko2.data" using 1:2 with linespoints linestyle 1 title "log-log MSD"
+# plot "kakko1.data" using 1:2 with linespoints linestyle 1 title "log-log MSD"
 
 # もし誤差バーがある（3列目が誤差）なら：
-# plot "kakko2.data" using 1:2:3 with yerrorbars linestyle 1 title "データ (誤差付)"
+# plot "kakko1.data" using 1:2:3 with yerrorbars linestyle 1 title "データ (誤差付)"
 
 print "Plot saved to torasu.png"
 set output

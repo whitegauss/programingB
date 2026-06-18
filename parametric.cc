@@ -15,7 +15,7 @@ double x,y,z,r,R;
 
 ofstream fout;
 
-fout.open("kyoku.data");
+fout.open("kakko1.data");
 for(int i =0; i<100000; i++){
     double t = 2.0 * i * pi / 100000.0;
     x=16* pow(sin(t),3.0);
