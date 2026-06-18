@@ -1,12 +1,8 @@
 # --- グラフの基本設定 ---
 reset
 set terminal pngcairo enhanced font "DejaVu Sans,14" size 1200,800 background "white"
-set output "msd_from_file.png"
+set output "torasu.png"
 
-# タイトル・軸ラベル
-set title "MSD from msd.txt" font ",16"
-set xlabel "Time" font ",14"
-set ylabel "MSD" font ",14"
 
 # グリッド・見た目
 set grid lc rgb "#e6e6e6" lw 1
@@ -22,14 +18,14 @@ set format x "%g"
 set format y "%g"
 
 # 出力（ファイル保存）
-# データファイル msd.txt の 1列目を x、2列目を y としてプロット
-plot "msd.txt" using 1:2 with dots title "シミュレーションデータ"
+# データファイル kakko2.data の 1列目を x、2列目を y としてプロット
+plot "kakko2.data" using 1:2 with dots title "シミュレーションデータ"
 # ログプロットにしたい場合（コメントを外す）
 # set logscale xy
-# plot "msd.txt" using 1:2 with linespoints linestyle 1 title "log-log MSD"
+# plot "kakko2.data" using 1:2 with linespoints linestyle 1 title "log-log MSD"
 
 # もし誤差バーがある（3列目が誤差）なら：
-# plot "msd.txt" using 1:2:3 with yerrorbars linestyle 1 title "データ (誤差付)"
+# plot "kakko2.data" using 1:2:3 with yerrorbars linestyle 1 title "データ (誤差付)"
 
-print "Plot saved to msd_from_file.png"
+print "Plot saved to torasu.png"
 set output
